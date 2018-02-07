@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/cloudinsight/cloudinsight-agent/common"
+	"github.com/efc2/efc2-agent/common"
 )
 
 const nginxSampleResponse = `

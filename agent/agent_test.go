@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
-	"github.com/cloudinsight/cloudinsight-agent/common/plugin"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/log"
+	"github.com/efc2/efc2-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/plugin"
 	"github.com/stretchr/testify/assert"
 )
 

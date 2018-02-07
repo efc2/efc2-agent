@@ -6,8 +6,8 @@
 
 build/*
 bin/*
-/cloudinsight-agent
-/cloudinsight-agent.conf
+/efc-agent
+/efc-agent.conf
 collector/conf.d/*.yaml
 coverage-all.out
 coverage.out

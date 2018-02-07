@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/api"
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
+	"github.com/efc2/efc2-agent/common/api"
+	"github.com/efc2/efc2-agent/common/config"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -20,7 +20,7 @@ func TestPost(t *testing.T) {
 
 	conf := config.Config{
 		GlobalConfig: config.GlobalConfig{
-			CiURL:      "https://dc-cloud.oneapm.com",
+			CiURL:      "https://dc-cloud.efc.one",
 			BindHost:   "127.0.0.1",
 			ListenPort: 10010,
 			StatsdPort: 8251,

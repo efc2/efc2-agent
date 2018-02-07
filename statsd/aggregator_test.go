@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/metric"
 	"github.com/stretchr/testify/assert"
 )
 

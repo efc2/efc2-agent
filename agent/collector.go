@@ -4,11 +4,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/api"
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/emitter"
-	"github.com/cloudinsight/cloudinsight-agent/common/gohai"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
+	"github.com/efc2/efc2-agent/common/api"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/emitter"
+	"github.com/efc2/efc2-agent/common/gohai"
+	"github.com/efc2/efc2-agent/common/log"
 )
 
 const metadataUpdateInterval = 4 * time.Hour

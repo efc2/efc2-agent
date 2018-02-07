@@ -8,8 +8,8 @@ import (
 
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/cloudinsight/cloudinsight-agent/common"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
+	"github.com/efc2/efc2-agent/common"
+	"github.com/efc2/efc2-agent/common/metric"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/metric"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

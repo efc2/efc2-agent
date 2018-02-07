@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/log"
 )
 
 // API XXX
@@ -60,7 +60,7 @@ func (api *API) SubmitMetrics(data interface{}) error {
 	return api.Post(api.GetURL("metrics"), &compressed)
 }
 
-// Post sends the metrics to Cloudinsight.
+// Post sends the metrics to Efc.
 func (api *API) Post(path string, body io.Reader) error {
 	req, err := http.NewRequest("POST", path, body)
 	if err != nil {
@@ -81,7 +81,7 @@ func (api *API) Post(path string, body io.Reader) error {
 }
 
 func (api *API) do(req *http.Request) (resp *http.Response, err error) {
-	req.Header.Add("User-Agent", fmt.Sprintf("Cloudinsight Agent/%s", config.VERSION))
+	req.Header.Add("User-Agent", fmt.Sprintf("Efc Agent/%s", config.VERSION))
 	req.Header.Add("Content-Type", "application/json")
 	req.Header.Add("Content-Encoding", "deflate")
 	req.Header.Add("Accept", "text/html, */*")

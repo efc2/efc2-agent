@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/cloudinsight/cloudinsight-agent/common"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
+	"github.com/efc2/efc2-agent/common"
+	"github.com/efc2/efc2-agent/common/metric"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/DATA-DOG/go-sqlmock.v1"
@@ -162,7 +162,7 @@ Purge done for trx's n:o < 1E0C undo n:o < 0
 History list length 324
 LIST OF TRANSACTIONS FOR EACH SESSION:
 ---TRANSACTION 0, not started
-MySQL thread id 3610, OS thread handle 0x7fd1881d5700, query id 27654 localhost oneapm
+MySQL thread id 3610, OS thread handle 0x7fd1881d5700, query id 27654 localhost efc
 SHOW /*!50000 ENGINE*/ INNODB STATUS
 --------
 FILE I/O
@@ -259,7 +259,7 @@ Purge done for trx's n:o < 373760 undo n:o < 0 state: running but idle
 History list length 1313
 LIST OF TRANSACTIONS FOR EACH SESSION:
 ---TRANSACTION 0, not started
-MySQL thread id 1696, OS thread handle 0x7fd02cb4f700, query id 28309 localhost oneapm init
+MySQL thread id 1696, OS thread handle 0x7fd02cb4f700, query id 28309 localhost efc init
 SHOW /*!50000 ENGINE*/ INNODB STATUS
 --------
 FILE I/O

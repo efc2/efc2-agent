@@ -7,7 +7,7 @@ instances:
   # configuration stanza.  On debian/ubuntu, this is included in the
   # `nginx-extras` package.  For more details, see:
   #
-  #   http://docs-ci.oneapm.com/services_example/nginx.html
+  #   http://docs-ci.efc.one/services_example/nginx.html
   #
 
   - nginx_status_url: http://localhost/nginx_status/

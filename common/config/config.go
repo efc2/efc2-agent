@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/cloudinsight/cloudinsight-agent/collector"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
-	"github.com/cloudinsight/cloudinsight-agent/common/plugin"
-	"github.com/cloudinsight/cloudinsight-agent/common/util"
+	"github.com/efc2/efc2-agent/collector"
+	"github.com/efc2/efc2-agent/common/log"
+	"github.com/efc2/efc2-agent/common/plugin"
+	"github.com/efc2/efc2-agent/common/util"
 )
 
 // VERSION sets the agent version here.
@@ -34,7 +34,7 @@ func NewConfig(confPath string, pluginFilters []string) (*Config, error) {
 	return c, nil
 }
 
-// Config represents cloudinsight-agent's configuration file.
+// Config represents efc-agent's configuration file.
 type Config struct {
 	GlobalConfig  GlobalConfig  `toml:"global"`
 	LoggingConfig LoggingConfig `toml:"logging"`
@@ -62,24 +62,24 @@ type LoggingConfig struct {
 }
 
 // Try to find a default config file at these locations (in order):
-//   1. $CWD/cloudinsight-agent.conf
-//   2. /etc/cloudinsight-agent/cloudinsight-agent.conf
+//   1. $CWD/efc-agent.conf
+//   2. /etc/efc-agent/efc-agent.conf
 //
 func getDefaultConfigPath() (string, error) {
-	file := "cloudinsight-agent.conf"
-	etcfile := "/etc/cloudinsight-agent/cloudinsight-agent.conf"
+	file := "efc-agent.conf"
+	etcfile := "/etc/efc-agent/efc-agent.conf"
 	return getPath(file, etcfile)
 }
 
 // Try to find plugins path at these locations (in order):
 //   1. $CONFPATH/collector/conf.d
 //   2. $CONFPATH/../../../collector/conf.d  **This is just for test case.**
-//   3. /etc/cloudinsight-agent/conf.d
+//   3. /etc/efc-agent/conf.d
 //
 func getPluginsPath(confPath string) (string, error) {
 	path := filepath.Join(filepath.Dir(confPath), "collector/conf.d")
 	testpath := filepath.Join(filepath.Dir(confPath), "../../../collector/conf.d")
-	etcpath := "/etc/cloudinsight-agent/conf.d"
+	etcpath := "/etc/efc-agent/conf.d"
 	return getPath(path, testpath, etcpath)
 }
 

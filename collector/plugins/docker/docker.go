@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/collector"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
-	"github.com/cloudinsight/cloudinsight-agent/common/plugin"
-	"github.com/cloudinsight/cloudinsight-agent/common/util"
+	"github.com/efc2/efc2-agent/collector"
+	"github.com/efc2/efc2-agent/common/log"
+	"github.com/efc2/efc2-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/plugin"
+	"github.com/efc2/efc2-agent/common/util"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/client"
 )

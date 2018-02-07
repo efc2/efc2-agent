@@ -1,33 +1,33 @@
-# Cloudinsight Agent
+# Efc Agent
 
-[![Build Status](https://travis-ci.org/cloudinsight/cloudinsight-agent.svg?branch=master)](https://travis-ci.org/cloudinsight/cloudinsight-agent)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cloudinsight/cloudinsight-agent)](https://goreportcard.com/report/github.com/cloudinsight/cloudinsight-agent)
-[![codecov](https://codecov.io/gh/cloudinsight/cloudinsight-agent/branch/master/graph/badge.svg)](https://codecov.io/gh/cloudinsight/cloudinsight-agent)
+[![Build Status](https://travis-ci.org/efc2/efc2-agent.svg?branch=master)](https://travis-ci.org/efc2/efc2-agent)
+[![Go Report Card](https://goreportcard.com/badge/github.com/efc2/efc2-agent)](https://goreportcard.com/report/github.com/efc2/efc2-agent)
+[![codecov](https://codecov.io/gh/efc2/efc2-agent/branch/master/graph/badge.svg)](https://codecov.io/gh/efc2/efc2-agent)
 
 [中文版 README](README_zh-CN.md)
 
-Cloudinsight Agent is written in Go for collecting metrics from the system it's
-running on, or from other services, and sending them to [Cloudinsight](https://cloud.oneapm.com).
+Efc Agent is written in Go for collecting metrics from the system it's
+running on, or from other services, and sending them to [Efc](https://cloud.efc.one).
 
 ## Building from source
 
-To build Cloudinsight Agent from the source code yourself you need to have a working Go environment with [version 1.7+](https://golang.org/doc/install).
+To build Efc Agent from the source code yourself you need to have a working Go environment with [version 1.7+](https://golang.org/doc/install).
 
 ```
-$ mkdir -p $GOPATH/src/github.com/cloudinsight
-$ cd $GOPATH/src/github.com/cloudinsight
-$ git clone https://github.com/cloudinsight/cloudinsight-agent
-$ cd cloudinsight-agent
+$ mkdir -p $GOPATH/src/github.com/efc2
+$ cd $GOPATH/src/github.com/efc2
+$ git clone https://github.com/efc2/efc2-agent
+$ cd efc2-agent
 $ make build
 ```
 
 ## Usage
 
-First you need to set a license key, which can be found at [https://cloud.oneapm.com/#/settings](https://cloud.oneapm.com/#/settings).
+First you need to set a license key, which can be found at [https://cloud.efc.one/#/settings](https://cloud.efc.one/#/settings).
 
 ```
-$ cp cloudinsight-agent.conf.example cloudinsight-agent.conf
-$ vi cloudinsight-agent.conf
+$ cp efc-agent.conf.example efc-agent.conf
+$ vi efc-agent.conf
 ...
 license_key = "*********************"
 ```
@@ -35,13 +35,13 @@ license_key = "*********************"
 Run the agent in foreground:
 
 ```
-$ ./bin/cloudinsight-agent
+$ ./bin/efc-agent
 ```
 
 For more options, see:
 
 ```
-$ ./bin/cloudinsight-agent --help
+$ ./bin/efc-agent --help
 ```
 
 ## Related works

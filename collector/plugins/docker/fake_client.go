@@ -45,7 +45,7 @@ func (d FakeDockerClient) ContainerList(octx context.Context, options types.Cont
 			},
 		},
 		Labels: map[string]string{
-			"com.docker.compose.service": "cloudinsight",
+			"com.docker.compose.service": "efc",
 		},
 		SizeRw:     0,
 		SizeRootFs: 0,
@@ -81,7 +81,7 @@ func (d FakeDockerClient) ContainerList(octx context.Context, options types.Cont
 			},
 		},
 		Labels: map[string]string{
-			"com.docker.compose.service": "cloudinsight",
+			"com.docker.compose.service": "efc",
 		},
 		SizeRw:     0,
 		SizeRootFs: 0,

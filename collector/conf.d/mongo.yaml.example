@@ -2,7 +2,7 @@ init_config:
 
 instances:
   # Specify the MongoDB URI, with database to use for reporting (defaults to "admin")
-  # E.g. mongodb://oneapm:oneapm@localhost:27017/my-db
+  # E.g. mongodb://efc:efc@localhost:27017/my-db
   - server: mongodb://localhost:27017
     # Time to wait on creating a MongoDB connection
     # timeout: 30

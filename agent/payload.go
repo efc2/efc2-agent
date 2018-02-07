@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/log"
 	uuid "github.com/nu7hatch/gouuid"
 )
 

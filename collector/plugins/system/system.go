@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/collector"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
-	"github.com/cloudinsight/cloudinsight-agent/common/plugin"
+	"github.com/efc2/efc2-agent/collector"
+	"github.com/efc2/efc2-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/plugin"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/disk"
 	"github.com/shirou/gopsutil/host"

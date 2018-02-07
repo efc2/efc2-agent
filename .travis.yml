@@ -5,7 +5,7 @@ language: go
 go:
   - 1.7.5
 
-go_import_path: github.com/cloudinsight/cloudinsight-agent
+go_import_path: github.com/efc2/efc2-agent
 
 script:
   - make test

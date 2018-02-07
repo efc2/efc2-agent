@@ -9,13 +9,13 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/cloudinsight/cloudinsight-agent/agent"
-	"github.com/cloudinsight/cloudinsight-agent/collector"
-	_ "github.com/cloudinsight/cloudinsight-agent/collector/plugins"
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
-	"github.com/cloudinsight/cloudinsight-agent/forwarder"
-	"github.com/cloudinsight/cloudinsight-agent/statsd"
+	"github.com/efc2/efc2-agent/agent"
+	"github.com/efc2/efc2-agent/collector"
+	_ "github.com/efc2/efc2-agent/collector/plugins"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/log"
+	"github.com/efc2/efc2-agent/forwarder"
+	"github.com/efc2/efc2-agent/statsd"
 )
 
 var fConfig = flag.String("config", "", "configuration file to load")
@@ -23,11 +23,11 @@ var fTest = flag.Bool("test", false, "collect metrics, print them out, and exit"
 var fPluginFilters = flag.String("plugin-filter", "",
 	"filter the plugins to enable, separator is :")
 
-const usage = `Cloudinsight Agent, a system tool that monitors system processes and services.
+const usage = `Efc Agent, a system tool that monitors system processes and services.
 
 Usage:
 
-  cloudinsight-agent [commands|flags]
+  efc-agent [commands|flags]
 
 The commands & flags are:
 
@@ -37,14 +37,14 @@ The commands & flags are:
 
 Examples:
 
-  # run cloudinsight-agent with all plugins defined in config file
-  cloudinsight-agent --config cloudinsight-agent.conf
+  # run efc-agent with all plugins defined in config file
+  efc-agent --config efc-agent.conf
 
   # run a single collection, outputing metrics to stdout
-  cloudinsight-agent --config cloudinsight-agent.conf -test
+  efc-agent --config efc-agent.conf -test
 
-  # run cloudinsight-agent, enabling the system & disk plugins
-  cloudinsight-agent --config cloudinsight-agent.conf --plugin-filter system:disk
+  # run efc-agent, enabling the system & disk plugins
+  efc-agent --config efc-agent.conf --plugin-filter system:disk
 `
 
 func startAgent(shutdown chan struct{}, conf *config.Config, test bool) {

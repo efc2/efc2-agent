@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cloudinsight/cloudinsight-agent/common/api"
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/log"
+	"github.com/efc2/efc2-agent/common/api"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/log"
 )
 
 // NewForwarder creates a new instance of Forwarder.
@@ -19,7 +19,7 @@ func NewForwarder(conf *config.Config) *Forwarder {
 	}
 }
 
-// Forwarder sends the metrics to Cloudinsight data center, which is collected by Collector and Statsd.
+// Forwarder sends the metrics to Efc data center, which is collected by Collector and Statsd.
 type Forwarder struct {
 	api  *api.API
 	conf *config.Config

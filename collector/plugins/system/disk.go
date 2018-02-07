@@ -3,9 +3,9 @@ package system
 import (
 	"fmt"
 
-	"github.com/cloudinsight/cloudinsight-agent/collector"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
-	"github.com/cloudinsight/cloudinsight-agent/common/plugin"
+	"github.com/efc2/efc2-agent/collector"
+	"github.com/efc2/efc2-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/plugin"
 )
 
 // NewDiskStats XXX

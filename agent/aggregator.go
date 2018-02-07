@@ -1,8 +1,8 @@
 package agent
 
 import (
-	"github.com/cloudinsight/cloudinsight-agent/common/config"
-	"github.com/cloudinsight/cloudinsight-agent/common/metric"
+	"github.com/efc2/efc2-agent/common/config"
+	"github.com/efc2/efc2-agent/common/metric"
 )
 
 // NewAggregator XXX

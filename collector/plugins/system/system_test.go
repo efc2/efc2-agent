@@ -3,8 +3,8 @@ package system
 import (
 	"testing"
 
-	"github.com/cloudinsight/cloudinsight-agent/common"
-	"github.com/cloudinsight/cloudinsight-agent/common/plugin"
+	"github.com/efc2/efc2-agent/common"
+	"github.com/efc2/efc2-agent/common/plugin"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/disk"
 	"github.com/shirou/gopsutil/host"

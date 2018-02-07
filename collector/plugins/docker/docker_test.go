@@ -3,7 +3,7 @@ package docker
 import (
 	"testing"
 
-	"github.com/cloudinsight/cloudinsight-agent/common"
+	"github.com/efc2/efc2-agent/common"
 )
 
 func TestDockerCheck(t *testing.T) {
@@ -30,7 +30,7 @@ func TestDockerCheck(t *testing.T) {
 	}
 	tags := []string{
 		"service:docker",
-		"com.docker.compose.service:cloudinsight",
+		"com.docker.compose.service:efc",
 		"docker_image:quay.io:4443/coreos/etcd:v2.2.2",
 		"image_name:quay.io:4443/coreos/etcd",
 		"image_tag:v2.2.2",
@@ -39,7 +39,7 @@ func TestDockerCheck(t *testing.T) {
 
 	tags = []string{
 		"service:docker",
-		"com.docker.compose.service:cloudinsight",
+		"com.docker.compose.service:efc",
 		"docker_image:quay.io/coreos/etcd:v2.2.2",
 		"image_name:quay.io/coreos/etcd",
 		"image_tag:v2.2.2",
@@ -60,7 +60,7 @@ func TestDockerCheck(t *testing.T) {
 	}
 	performanceTags := []string{
 		"service:docker",
-		"com.docker.compose.service:cloudinsight",
+		"com.docker.compose.service:efc",
 		"container_name:etcd2",
 		"docker_image:quay.io:4443/coreos/etcd:v2.2.2",
 		"image_name:quay.io:4443/coreos/etcd",
